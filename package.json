@@ -1,0 +1,27 @@
+{
+  "name": "anycloud",
+  "version": "0.0.1",
+  "description": "Test simultaneous Serverless deployment to AWS Lambda and Azure Functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "azure",
+    "functions",
+    "serverless"
+  ],
+  "author": "Mårten Karlberg",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "mocha": "^3.2.0",
+    "serverless": "^1.7.0"
+  },
+  "dependencies": {
+    "proj4": "^2.3.17"
+  }
+}
