@@ -20,7 +20,8 @@
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "mocha": "^3.2.0",
-    "serverless": "^1.8.0"
+    "serverless": "^1.8.0",
+    "serverless-azure-functions": "^0.1.1"
   },
   "dependencies": {
     "proj4": "^2.3.17"

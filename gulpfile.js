@@ -8,7 +8,8 @@ gulp.task('default', () => {
 })
 
 gulp.task('config', () => {
-  // build serverless.yml files, one for each cloud, from config files holding provider specific variables
+  // build serverless.yml files, one for each cloud
+  // start with common template, override parts of sections from the provider specific config files
 })
 
 gulp.task('copy', () => {

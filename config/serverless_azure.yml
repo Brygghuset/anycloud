@@ -1,0 +1,43 @@
+# Based on boilerplate, see
+# https://serverless.com/framework/docs/providers/azure/guide/quickstart/
+
+# template:
+# package:
+#   exclude:
+#     - node_modules/**
+#     - .gitignore
+#     - package.json
+#     - .git/**
+
+provider:
+  name: azure
+  location: West US
+  #armTemplate:
+     #file: YourARMTemplate.json
+     #parameters:
+      #VariableNameToUserInArmTemplate: Value
+
+plugins:
+  - serverless-azure-functions
+
+functions:
+  transform:
+     handler: index.transform
+     events:
+       - http: true
+         x-azure-settings:
+           authLevel : anonymous
+
+#      - http: true
+#        x-azure-settings:
+#          name: req #<string>, default - "req", specifies which name it's available on `context.bindings`
+#          methods: #<array> [GET, POST, PUT, DELETE], default - all
+#            - GET
+#           route: example/hello #<string>, default - <function name>
+#           authLevel: anonymous #<enum - anonymous|function (default)|admin>
+
+# For more details, see https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook
+
+# URL paths for the serverless functions are prefixed with "api" by default, e.g. /api/some/path. You can change this via a setting in host.json.
+
+# You can set up CORS following the instructions on https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings#manage-cors
