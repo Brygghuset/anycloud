@@ -9,7 +9,6 @@ const transform = (coordinates) => {
   for(let i = 0; i < coordinates.length; i = i + 2) {
     Array.prototype.push.apply(res, proj4(wgs84, sweref99TM, coordinates.slice(i, i + 2)));
   }
-  console.log(res);
   return res;
 }
 

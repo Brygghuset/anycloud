@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Test simultaneous Serverless deployment to AWS Lambda and Azure Functions",
   "main": "index.js",
+  "repository": "https://github.com/Brygghuset/anycloud.git",
   "scripts": {
     "test": "mocha"
   },
@@ -19,7 +20,7 @@
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "mocha": "^3.2.0",
-    "serverless": "^1.7.0"
+    "serverless": "^1.8.0"
   },
   "dependencies": {
     "proj4": "^2.3.17"

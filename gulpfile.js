@@ -1,11 +1,20 @@
 const gulp = require('gulp');
 
-gulp.task('default', function() {
-  // place code for your default task here
-});
+gulp.task('default', () => {
+  // config
+  // copy to dist
+  // what else?
+  // deploy?
+})
 
-// TODO Tasks:
-// * build serverless.yml files, one for each cloud, from config files holding provider specific variables
-// * deploy all serverless.yml files (runs sls deploy)
-// * build needed?
-// * run tests
+gulp.task('config', () => {
+  // build serverless.yml files, one for each cloud, from config files holding provider specific variables
+})
+
+gulp.task('copy', () => {
+  // copy each deployable provider to dist folder
+})
+
+gulp.task('deploy', () => {
+  // run sls deploy for each provider from dist folder
+})
